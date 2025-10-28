@@ -405,7 +405,7 @@
 
         // Groq API Configuration
         // API anahtarınızı almak için: https://console.groq.com/keys
-        const GROQ_API_KEY = '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'; // API anahtarı ayarlandı
+        const GROQ_API_KEY = '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'; // API anahtarı ayarlandı
         const GROQ_MODEL = 'llama-3.1-8b-instant'; // Çok hızlı model
         
         // API anahtarı ayarlama talimatları:
@@ -1212,9 +1212,14 @@
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
                             </button>
-                            <h1 className="text-xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
-                                J.A.R.V.I.S
-                            </h1>
+                            <div className="flex items-center gap-2">
+                                <h1 className="text-xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
+                                    J.A.R.V.I.S
+                                </h1>
+                                <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-bold px-2 py-0.5 rounded-full shadow-lg animate-pulse">
+                                    ✨ YENİ
+                                </span>
+                            </div>
                             <div className="flex items-center gap-2">
                                 <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-semibold">{questionCount}/{MAX_QUESTIONS}</span>
                                 <button
@@ -1236,9 +1241,14 @@
 
                         {/* Desktop Header */}
                         <div className="hidden md:flex items-center justify-between p-4 border-b border-emerald-200 bg-white/80 backdrop-blur-sm shadow-sm">
-                            <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
-                                J.A.R.V.I.S
-                            </h1>
+                            <div className="flex items-center gap-3">
+                                <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
+                                    J.A.R.V.I.S
+                                </h1>
+                                <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
+                                    ✨ YENİLENDİ
+                                </span>
+                            </div>
                             <div className="flex items-center gap-4">
                                 <span className="text-sm bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full font-semibold">Soru: {questionCount}/{MAX_QUESTIONS}</span>
                                 {isRateLimited && (
@@ -1437,5 +1447,7 @@
     </script>
 </body>
 </html>
+
+
 
 
